@@ -1,9 +1,9 @@
 import React from 'react';
 import HornedBeast from './HornedBeast';
-// import HornedData from './data.json';
 import CardGroup from 'react-bootstrap/CardGroup';
 
 class Main extends React.Component {
+   
     render(){
         return(
             <div className='img'>
