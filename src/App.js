@@ -4,7 +4,9 @@ import Footer from './components/Footer';
 import Main from './components/Main';
 import Data from './components/data.json';
 
+
 class App extends React.Component {
+
   render() {
     return (
       <div>

@@ -1,15 +1,52 @@
 import React from 'react';
 import HornedBeast from './HornedBeast';
-import CardGroup from 'react-bootstrap/CardGroup';
+import CardColumns from 'react-bootstrap/CardColumns';
+import FormData from './components/FormData';
 
 class Main extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            newData : this.props.Data,
+        
+        }
+       
+    }
+
+       
+    filter (numOfHorned) {
+
+      let  filteredData = [];
+      this.props.Data.map(event => {
+        if (event  === {numOfHorned}) {
+            all.push(event)
+        } 
+        return all  ;
+
+      })
+
+
+      if(numOfHorned === 'all' ){
+        filteredData = this.props.Data;
+     }
+     this.setState({
+        newData : filteredData
+     })
+
+       
+    }
+
    
     render(){
         return(
+            
+        
             <div className='img'>
-                <CardGroup>
-
-                {this.props.Data.map(item=>{
+               < FormData filter = {this.filter}/>
+                <CardColumns>
+                
+                {this.state.newData.map(item=>{
                     return(
                         <HornedBeast
                         title={item.title}
@@ -20,8 +57,11 @@ class Main extends React.Component {
                 })
                 }
 
-            </CardGroup>
+                </CardColumns>
+
             </div>
+
+            
         )
     }
 
