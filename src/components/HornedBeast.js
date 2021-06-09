@@ -39,7 +39,7 @@ render(){
         return(
             <div>
 
-             <Card style={{ width: '18rem' }} onClick={this.handleClick}> 
+             <Card style={{ width: '18rem', backgroundColor : '#232323', color: 'white'}} onClick={this.handleClick}> 
              <Card.Img variant="top" src={this.props.imageUrl} onClick={this.increasNumOfHorned} />
              <Card.Body>
              <Card.Title>{this.props.title}</Card.Title>
