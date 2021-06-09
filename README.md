@@ -70,8 +70,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
+# lab 02
 
-# Time Estimate
+## Time Estimate
 
 * Feature #1: Display images
 
@@ -102,3 +103,18 @@ Start time: 9:00 pm.
 Finish time: 10 pm.
 
 Actual time needed to complete: 1 hours
+
+# lab 03 :
+
+## Time Estimate
+
+* Feature #1: Display a Modal
+
+Estimate of time needed to complete: 2 hour.
+
+Start time: 4:00pm
+
+Finish time: 8:00pm
+
+Actual time needed to complete: 4 hours.
+
