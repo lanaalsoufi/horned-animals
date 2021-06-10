@@ -7,11 +7,29 @@ import Data from './components/data.json';
 
 class App extends React.Component {
 
+  constructor (props) {
+    super(props);
+    this.state = {
+      Data : Data
+    }
+  }
+
+  displayFilteredImages = (newData) => {
+    this.setState ({
+      Data : newData
+    })
+
+
+  }
+  
+
   render() {
     return (
       <div>
         <Header />
-        <Main Data ={Data} />
+        <Main Data ={this.state.Data}
+        
+        displayFilteredImages = {this.displayFilteredImages}/>
         <Footer />
       </div>
     )
