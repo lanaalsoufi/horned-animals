@@ -1,7 +1,7 @@
 import React from 'react';
 import Form from 'react-bootstrap/Form'
 
-class formData extends React.Component {
+class FormData extends React.Component {
 
     
     
@@ -10,7 +10,7 @@ class formData extends React.Component {
             <Form  >
                 <Form.Group controlId="exampleForm.SelectCustom">
                     <Form.Label>Select Number Of Horns</Form.Label>
-                    <Form.Control as="select" custom onChange={(e) => this.props.formData(e.target.value)}  >
+                    <Form.Control as="select" onChange={this.props.filter} >
                         <option value='all'>All</option>
                         <option value='1'>One</option>
                         <option value='2'>Two</option>
@@ -21,4 +21,4 @@ class formData extends React.Component {
             </Form>)
     }
 }
-export default formData;
+export default FormData;
